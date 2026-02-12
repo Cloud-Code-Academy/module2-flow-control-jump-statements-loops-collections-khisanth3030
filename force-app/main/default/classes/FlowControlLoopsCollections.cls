@@ -109,8 +109,12 @@ public with sharing class FlowControlLoopsCollections {
      * @param a The string to check.
      * @return A string indicating whether the input is "Empty", "Null", or "Contains Text".
      */
-    public static String checkString(String a) {
-        return null; // Replace null with the variable you used to store the result
+    public static String checkString(String a) {    
+        String result;   
+        if(a == null){result = 'Null';}
+        else if(a == ''){result = 'Empty';}
+        else if(a != '' && a!= null){result = 'Contains Text';}
+        return result;
     }
 
     /**
